@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #222E50;
+  --secondary-color: #E9D985;
+  --accent1-color: #007991;
+  --accent2-color: #BCD8C1;
+
+  --heading-font: "Times New Roman", serif;
+  --paragraph-font: Lato, Georgia, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  background-color: #fff;
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+/* Top Navigation */
+nav {
+  background-color: var(--accent1-color);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: var(--heading-font);
+}
+
+/* Main Content Area */
+main {
+  padding: 2rem;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.left-column {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.left-column img {
+  width: 100%;
+  height: auto;
+  border: 2px dashed var(--accent1-color);
+  background-color: var(--accent2-color);
+}
+
+.right-column {
+  flex: 1 1 45%;
+  font-family: var(--paragraph-font);
+  font-size: 1rem;
+}
+
+.right-column p {
+  white-space: pre-line;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  font-size: 0.85rem;
+}
+
+/* Footer Left */
+.footer-left p {
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer Center */
+.footer-center ul {
+  list-style: none;
+}
+
+.footer-center ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-center ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* Footer Right */
+.footer-right .social-icons {
+  margin-bottom: 1rem;
+}
+
+.footer-right .social-icons a {
+  color: var(--accent2-color);
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.footer-right .legal {
+  color: var(--accent2-color);
+}
+
+.footer-right .legal a {
+  color: var(--accent2-color);
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+img:hover {
+    transform: scale(1.05);
+  }
+
+img{
+  border-radius: 8px;
+    box-shadow: 10px 10px;
+  }
+
+img {
+    transition: transform .5s;
+    width: 100%;
+    border: 2px solid var(--accent1-color);
+  }
